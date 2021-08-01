@@ -1,0 +1,44 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout-header {
+	background-color: #ffc02f;
+}
+
+.ant-card-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #ffc02f;
+}
+
+.ant-card-head-title {
+	font: oswald;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.ant-card-body {
+	padding: 45px;
+	background: #ffffff;
+}
+
+.logo {
+	height: 60px;
+}
+
+.Converter {
+	background-color: #ffffff;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.CoinGecko {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
