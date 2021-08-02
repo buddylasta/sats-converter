@@ -1,42 +1,36 @@
 @import '~antd/dist/antd.css';
 
-.ant-layout-header {
-	background-color: #ffc02f;
-}
-
 .ant-card-head {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #ffc02f;
+	background: #fc9657;
+	outline-style: solid;
+	outline-width: thick;
 }
 
 .ant-card-head-title {
-	font: oswald;
-	font-size: 20px;
+    font-family: Copperplate, Papyrus, fantasy;	
+    font-size: 20px;
 	font-weight: bold;
 }
 
 .ant-card-body {
-	padding: 45px;
+	padding: 40px;
 	background: #ffffff;
+	outline-style: solid;
+	outline-width: thick;
 }
 
-.logo {
-	height: 60px;
+.CardInput {
+	outline-style: solid;
+	outline-width: medium;
 }
 
 .Converter {
 	background-color: #ffffff;
 	min-height: 60vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.CoinGecko {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
