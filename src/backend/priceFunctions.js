@@ -17,36 +17,24 @@ var fetchBtcPrice = async() => {
 	return (btcusd);
   };
 
-function convertUsdToSats(usd) {
-	fetchBtcPrice().then((btcPrice) => {
-		console.log("btc price: " + btcPrice); //btc price in usd
-		let satsPerUsd = Math.round(satsPerBtc/btcPrice); //number of sats per usd
-		console.log("sats per USD: " + satsPerUsd); 
-		let usdOutput = usd*satsPerUsd;
-		console.log(usd + " USDs equals " + usdOutput + " sats.");
-		return usdOutput; 
-	}).catch((err) => {
-		console.log("error: " + err);
-	});
+async function convertUsdToSats(usd) {
+	const btcPrice = await fetchBtcPrice();
+	const satsPerUsd = Math.round(satsPerBtc/btcPrice); //number of sats per usd
+	const satsOutput = usd * satsPerUsd;
+	return satsOutput;
 };
 
-console.log(convertUsdToSats(14000));
+//console.log(convertUsdToSats(14000));
 
-function convertSatstoUsd(sats) {
-	fetchBtcPrice().then((btcPrice) => {
-		console.log("btc price: " + btcPrice); //btc price in usd
-		let usdPerSat = btcPrice/satsPerBtc; //number of USDs per sat
-		console.log("USDs per sat: " + usdPerSat);
-		let satsOutput = sats*usdPerSat;
-		console.log(sats + " sats equals " + satsOutput + " USDs.");
-		return satsOutput; 
-	}).catch((err) => {
-		console.log("error: " + err);
-	});
+async function convertSatsToUsd(sats) {
+	const btcPrice = await fetchBtcPrice();
+	const usdPerSat = btcPrice/satsPerBtc;
+	const usdOutput =  sats * usdPerSat;
+	return usdOutput;
 };
 
-console.log(convertSatstoUsd(1800));
+//console.log(convertSatsToUsd(1800));
 
-export { convertSatstoUsd, convertUsdToSats }; 
+export { convertSatsToUsd, convertUsdToSats }; 
 
 //documentation: https://www.npmjs.com/package/coingecko-api
