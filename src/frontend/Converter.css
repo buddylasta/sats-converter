@@ -1,28 +1,43 @@
 @import '~antd/dist/antd.css';
 
 /*@media all and (min-width:960px) and (max-width: 1024px) {
+
 }
 
 @media all and (min-width:960px) and (max-width: 1024px) {
+
   }
   
   @media all and (min-width:801px) and (max-width: 959px) {
+
   }
   
   @media all and (min-width:769px) and (max-width: 800px) {
+
   }
   
   @media all and (min-width:569px) and (max-width: 768px) {
+
   }
   
   @media all and (min-width:481px) and (max-width: 568px) {
+
   }
   
   @media all and (min-width:321px) and (max-width: 480px) {
+
   }
   
   @media all and (min-width:0px) and (max-width: 320px) {
-  }*/
+
+  }
+
+This will cover pretty much all devices being used
+I would concentrate on getting the styling correct for 
+the sizes at the end of the range 
+(i.e. 320, 480, 568, 768, 800, 1024) as for all the others 
+they will just be responsive to the size available.
+Also, don't use px anywhere - use em's or %.*/
 
 .ant-card-head {
 	display: flex;
