@@ -78,4 +78,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # To Do List 
 
 - add subdomain buddylasta.com/stas-converter
-- I erroneously developed this without mobile responsiveness in mind. Adjust the css template in converter.css so that this works on mobile. Use ems and %s
+- I erroneously developed this without mobile responsiveness in mind. Adjust the css template in converter.css so that this works on mobile. Use ems and %s (https://stackoverflow.com/questions/15061520/responsive-css-styles-on-mobile-devices-only)
